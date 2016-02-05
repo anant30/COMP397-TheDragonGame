@@ -20,6 +20,7 @@ module scenes {
         // Start Method
         public start(): void {
             this._slide3Image = new createjs.Bitmap("../../Assets/images/House3.png");
+            this.addChild(this._slide3Image);    
             // add the SLIDE3 label to the scene
             this._playLabel = new createjs.Text("Choose a Number", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;

@@ -16,6 +16,7 @@ var scenes;
         // Start Method
         Slide4.prototype.start = function () {
             this._slide4Image = new createjs.Bitmap("../../Assets/images/House4.png");
+            this.addChild(this._slide4Image);
             // add the SLIDE4 label to the scene
             this._playLabel = new createjs.Text("Choose a Number", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;

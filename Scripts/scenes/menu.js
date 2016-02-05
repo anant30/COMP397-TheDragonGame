@@ -18,7 +18,7 @@ var scenes;
             this._introImage = new createjs.Bitmap("../../Assets/images/Intro.gif");
             this.addChild(this._introImage);
             // add the MENU label to the scene
-            this._gameLabel = new createjs.Text("Haunted Houses", "60px Consolas", "#000000");
+            this._gameLabel = new createjs.Text("Haunted Houses", "60px Consolas", "#ffffff");
             this._gameLabel.regX = this._gameLabel.getMeasuredWidth() * 0.5;
             this._gameLabel.regY = this._gameLabel.getMeasuredHeight() * 0.5;
             this._gameLabel.x = config.Screen.CENTER_X;

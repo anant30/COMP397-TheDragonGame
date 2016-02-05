@@ -15,7 +15,9 @@ var scenes;
         // PUBLIC METHODS +++++++++++++++++++++
         // Start Method
         Over.prototype.start = function () {
+            // adding background
             this._overImage = new createjs.Bitmap("../../Assets/images/Over.png");
+            this.addChild(this._overImage);
             // add the PLAY label to the scene
             this._overLabel = new createjs.Text("Over Scene", "60px Consolas", "#000000");
             this._overLabel.regX = this._overLabel.getMeasuredWidth() * 0.5;

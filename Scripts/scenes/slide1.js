@@ -17,6 +17,7 @@ var scenes;
         Slide1.prototype.start = function () {
             //add the background image
             this._slide1Image = new createjs.Bitmap("../../Assets/images/House1.png");
+            this.addChild(this._slide1Image);
             // add the SLIDE1 label to the scene
             this._playLabel = new createjs.Text("Choose a Number", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;

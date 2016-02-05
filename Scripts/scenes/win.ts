@@ -15,6 +15,7 @@ module scenes {
         // Start Method
         public start(): void {
             this._winImage = new createjs.Bitmap("../../Assets/images/Win.png");
+            this.addChild(this._winImage);    
             // add the WIN label to the scene
             this._overLabel = new createjs.Text("YOU WON", "60px Consolas", "#000000");
             this._overLabel.regX = this._overLabel.getMeasuredWidth() * 0.5;
