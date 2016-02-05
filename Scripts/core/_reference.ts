@@ -7,6 +7,8 @@
 /// <reference path="../objects/scene.ts" />
 
 /// <reference path="../scenes/over.ts" />
+/// <reference path="../scenes/win.ts" />
+
 /// <reference path="../scenes/play.ts" />
 /// <reference path="../scenes/menu.ts" />
 /// <reference path="../scenes/slide1.ts" />

@@ -12,6 +12,7 @@
         public static SLIDE5: number = 6;
           
         public static OVER: number = 7;
+        public static WIN: number = 8;
         
         
     }

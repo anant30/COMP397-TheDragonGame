@@ -12,6 +12,7 @@ var config;
         Scene.SLIDE4 = 5;
         Scene.SLIDE5 = 6;
         Scene.OVER = 7;
+        Scene.WIN = 8;
         return Scene;
     })();
     config.Scene = Scene;

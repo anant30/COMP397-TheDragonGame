@@ -8,12 +8,13 @@ var scene;
 // Game Scenes
 var menu;
 var play;
+var win;
+var over;
 var slide1;
 var slide2;
 var slide3;
 var slide4;
 var slide5;
-var over;
 function init() {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -110,6 +111,13 @@ function changeScene() {
             over = new scenes.Over();
             currentScene = over;
             console.log("Starting OVER Scene");
+            break;
+        case config.Scene.WIN:
+            // show the game OVER scene
+            stage.removeAllChildren();
+            win = new scenes.Win();
+            currentScene = over;
+            console.log("Starting WIN Scene");
             break;
     }
     console.log(currentScene.numChildren);

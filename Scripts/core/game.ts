@@ -11,6 +11,8 @@ var scene:number;
 // Game Scenes
 var menu:scenes.Menu;
 var play:scenes.Play;
+var win:scenes.Win;
+var over:scenes.Over;
 
 var slide1:scenes.Slide1;
 var slide2:scenes.Slide2;
@@ -18,7 +20,7 @@ var slide3:scenes.Slide3;
 var slide4:scenes.Slide4;
 var slide5:scenes.Slide5;
 
-var over:scenes.Over;
+
 
 function init():void {
     // create a reference the HTML canvas Element
@@ -136,6 +138,14 @@ function changeScene(): void {
             over = new scenes.Over();
             currentScene = over;
             console.log("Starting OVER Scene");
+            break;
+            
+        case config.Scene.WIN:
+            // show the game OVER scene
+            stage.removeAllChildren();
+            win = new scenes.Win();
+            currentScene = over;
+            console.log("Starting WIN Scene");
             break;
     }
 
