@@ -29,14 +29,14 @@ var scenes;
             this._oneButton.on("click", this._oneButtonClick, this);
             // add the TWO button to the PLAY scene ----------------------------------
             this._twoButton = new objects.Button("TwoButton", config.Screen.CENTER_X + 120, config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
+            this.addChild(this._twoButton);
             // TWO Button event listener
-            this._oneButton.on("click", this._twoButtonClick, this);
+            this._twoButton.on("click", this._twoButtonClick, this);
             // add the THREE button to the PLAY scene ----------------------------------
             this._threeButton = new objects.Button("ThreeButton", config.Screen.CENTER_X + 140, config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
+            this.addChild(this._threeButton);
             // THREE Button event listener
-            this._oneButton.on("click", this._threeButtonClick, this);
+            this._threeButton.on("click", this._threeButtonClick, this);
             // add the BACK button to the PLAY scene
             this._backButton = new objects.Button("BackButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 60);
             this.addChild(this._backButton);

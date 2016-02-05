@@ -96,7 +96,7 @@ function changeScene() {
             stage.removeAllChildren();
             slide4 = new scenes.Slide4();
             currentScene = slide4;
-            console.log("Starting SLIDE1 Scene");
+            console.log("Starting SLIDE4 Scene");
             break;
         case config.Scene.SLIDE5:
             // show the SLIDE5 scene
@@ -116,7 +116,7 @@ function changeScene() {
             // show the game OVER scene
             stage.removeAllChildren();
             win = new scenes.Win();
-            currentScene = over;
+            currentScene = win;
             console.log("Starting WIN Scene");
             break;
     }
