@@ -1,12 +1,12 @@
 // SLIDE1 SCENE
 module scenes {
-    export class Slide1 extends objects.Scene {
+    export class Slide3 extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _playLabel: createjs.Text;
         
-        private _oneButton: objects.Button;
-        private _twoButton: objects.Button;
-        private _threeButton: objects.Button;
+        private _sevenButton: objects.Button;
+        private _eightButton: objects.Button;
+        private _nineButton: objects.Button;
         
         private _backButton: objects.Button;
         
@@ -32,35 +32,35 @@ module scenes {
 
 
 
-            // add the ONE button to the PLAY scene ----------------------------------
-            this._oneButton = new objects.Button(
-                "OneButton",
+            // add the SEVEN button to the PLAY scene ----------------------------------
+            this._sevenButton = new objects.Button(
+                "SevenButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
+            this.addChild(this._sevenButton);
            
-            // ONE Button event listener
-            this._oneButton.on("click", this._oneButtonClick, this);
+            // seven Button event listener
+            this._eightButton.on("click", this._sevenButtonClick, this);
             
-            // add the TWO button to the PLAY scene ----------------------------------
-            this._twoButton = new objects.Button(
-                "TwoButton",
+            // add the EIGHT button to the PLAY scene ----------------------------------
+            this._eightButton = new objects.Button(
+                "EightButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
+            this.addChild(this._eightButton);
            
-            // TWO Button event listener
-            this._oneButton.on("click", this._twoButtonClick, this);
+            // EIGHT Button event listener
+            this._eightButton.on("click", this._eightButtonClick, this);
             
-            // add the THREE button to the PLAY scene ----------------------------------
-            this._threeButton = new objects.Button(
+            // add the NINE button to the PLAY scene ----------------------------------
+            this._nineButton = new objects.Button(
                 "ThreeButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
+            this.addChild(this._sevenButton);
            
-            // THREE Button event listener
-            this._oneButton.on("click", this._threeButtonClick, this);
+            // NINE Button event listener
+            this._sevenButton.on("click", this._nineButtonClick, this);
 
 
 
@@ -96,24 +96,24 @@ module scenes {
             changeScene();
         }
         
-        // ONE Button click event handler
-        private _oneButtonClick(event: createjs.MouseEvent) {
+        // SEVEN Button click event handler
+        private _sevenButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.OVER;
+            scene = config.Scene.SLIDE4;            
             changeScene();
         }
         
-         // ONE Button click event handler
-        private _twoButtonClick(event: createjs.MouseEvent) {
+         // SEVEN Button click event handler
+        private _eightButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.SLIDE2;
+            scene = config.Scene.OVER;
             changeScene();           
         }
         
-         // ONE Button click event handler
-        private _threeButtonClick(event: createjs.MouseEvent) {
+         // SEVEN Button click event handler
+        private _nineButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.OVER;
+            scene = config.Scene.OVER;            
             changeScene();
         }
         

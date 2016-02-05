@@ -18,7 +18,7 @@ module scenes {
             
             // add the MENU label to the scene
             this._gameLabel = new createjs.Text("The Number Game", "60px Consolas", "#000000");    
-            this._gameLabel = new createjs.Text("How far can you go???", "60px Consolas", "#00ff00");        
+               
             this._gameLabel.regX = this._gameLabel.getMeasuredWidth() * 0.5;
             this._gameLabel.regY = this._gameLabel.getMeasuredHeight() * 0.5;
             this._gameLabel.x = config.Screen.CENTER_X;

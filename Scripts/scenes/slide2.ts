@@ -1,12 +1,12 @@
 // SLIDE1 SCENE
 module scenes {
-    export class Slide1 extends objects.Scene {
+    export class Slide2 extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _playLabel: createjs.Text;
         
-        private _oneButton: objects.Button;
-        private _twoButton: objects.Button;
-        private _threeButton: objects.Button;
+        private _fourButton: objects.Button;
+        private _fiveButton: objects.Button;
+        private _sixButton: objects.Button;
         
         private _backButton: objects.Button;
         
@@ -32,35 +32,35 @@ module scenes {
 
 
 
-            // add the ONE button to the PLAY scene ----------------------------------
-            this._oneButton = new objects.Button(
-                "OneButton",
+            // add the FOUR button to the PLAY scene ----------------------------------
+            this._fourButton = new objects.Button(
+                "FourButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
+            this.addChild(this._fourButton);
            
-            // ONE Button event listener
-            this._oneButton.on("click", this._oneButtonClick, this);
+            // four Button event listener
+            this._fiveButton.on("click", this._fourButtonClick, this);
             
-            // add the TWO button to the PLAY scene ----------------------------------
-            this._twoButton = new objects.Button(
-                "TwoButton",
+            // add the FIVE button to the PLAY scene ----------------------------------
+            this._fiveButton = new objects.Button(
+                "FiveButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
+            this.addChild(this._fiveButton);
            
-            // TWO Button event listener
-            this._oneButton.on("click", this._twoButtonClick, this);
+            // FIVE Button event listener
+            this._fiveButton.on("click", this._fiveButtonClick, this);
             
-            // add the THREE button to the PLAY scene ----------------------------------
-            this._threeButton = new objects.Button(
+            // add the SIX button to the PLAY scene ----------------------------------
+            this._sixButton = new objects.Button(
                 "ThreeButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
+            this.addChild(this._fourButton);
            
-            // THREE Button event listener
-            this._oneButton.on("click", this._threeButtonClick, this);
+            // SIX Button event listener
+            this._fourButton.on("click", this._sixButtonClick, this);
 
 
 
@@ -96,24 +96,24 @@ module scenes {
             changeScene();
         }
         
-        // ONE Button click event handler
-        private _oneButtonClick(event: createjs.MouseEvent) {
+        // FOUR Button click event handler
+        private _fourButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
             scene = config.Scene.OVER;
             changeScene();
         }
         
-         // ONE Button click event handler
-        private _twoButtonClick(event: createjs.MouseEvent) {
+         // FOUR Button click event handler
+        private _fiveButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.SLIDE2;
+            scene = config.Scene.OVER;
             changeScene();           
         }
         
-         // ONE Button click event handler
-        private _threeButtonClick(event: createjs.MouseEvent) {
+         // FOUR Button click event handler
+        private _sixButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.OVER;
+            scene = config.Scene.SLIDE3;            
             changeScene();
         }
         
