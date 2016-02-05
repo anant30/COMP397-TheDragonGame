@@ -15,7 +15,7 @@ module scenes {
         
         // Start Method
         public start(): void {
-            this._introImage = new createjs.Bitmap("../../Assets/images/Intro.png");
+            this._introImage = new createjs.Bitmap("../../Assets/images/Intro.gif");
             // add the MENU label to the scene
             this._gameLabel = new createjs.Text("The Number Game", "60px Consolas", "#000000");                  
             this._gameLabel.regX = this._gameLabel.getMeasuredWidth() * 0.5;
