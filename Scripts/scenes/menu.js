@@ -22,6 +22,9 @@ var scenes;
             this._gameLabel.x = config.Screen.CENTER_X;
             this._gameLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._gameLabel);
+            // add background to the MENU Scene
+            //this._background = new objects.Background("firstpage", config.Screen.CENTER_X, config.Screen.CENTER_Y);
+            // this.addChild(this._background);
             // add the START button to the MENU scene
             this._startButton = new objects.Button("StartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 60);
             this.addChild(this._startButton);
