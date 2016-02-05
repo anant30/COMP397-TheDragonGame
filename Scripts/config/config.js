@@ -36,4 +36,5 @@ var config;
     })();
     config.Game = Game;
 })(config || (config = {}));
+//background-image: url("../../Assets/images/Background.jpg"); 
 //# sourceMappingURL=config.js.map

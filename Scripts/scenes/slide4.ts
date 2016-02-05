@@ -3,7 +3,7 @@ module scenes {
     export class Slide4 extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _playLabel: createjs.Text;
-        
+        private _slide4Image: createjs.Bitmap;
         private _tenButton: objects.Button;
         private _elevenButton: objects.Button;
         private _twelveButton: objects.Button;
@@ -19,7 +19,7 @@ module scenes {
         
         // Start Method
         public start(): void {
-
+            this._slide4Image = new createjs.Bitmap("../../Assets/images/House4.png");
             // add the SLIDE4 label to the scene
             this._playLabel = new createjs.Text("Choose a Number", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;

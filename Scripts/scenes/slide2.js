@@ -15,6 +15,7 @@ var scenes;
         // PUBLIC METHODS +++++++++++++++++++++
         // Start Method
         Slide2.prototype.start = function () {
+            this._slide2Image = new createjs.Bitmap("../../Assets/images/House2.png");
             // add the SLIDE2 label to the scene
             this._playLabel = new createjs.Text("Choose a Number", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
