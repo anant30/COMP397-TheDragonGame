@@ -15,29 +15,29 @@ var scenes;
         // PUBLIC METHODS +++++++++++++++++++++
         // Start Method
         Slide2.prototype.start = function () {
-            // add the PLAY label to the scene
+            // add the SLIDE2 label to the scene
             this._playLabel = new createjs.Text("Choose a Number", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             this._playLabel.x = config.Screen.CENTER_X;
             this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
-            // add the FOUR button to the PLAY scene ----------------------------------
+            // add the FOUR button to the SLIDE2 scene ----------------------------------
             this._fourButton = new objects.Button("FourButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 60);
             this.addChild(this._fourButton);
             // four Button event listener
-            this._fiveButton.on("click", this._fourButtonClick, this);
-            // add the FIVE button to the PLAY scene ----------------------------------
-            this._fiveButton = new objects.Button("FiveButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 60);
+            this._fourButton.on("click", this._fourButtonClick, this);
+            // add the FIVE button to the SLIDE2 scene ----------------------------------
+            this._fiveButton = new objects.Button("FiveButton", config.Screen.CENTER_X + 120, config.Screen.CENTER_Y + 60);
             this.addChild(this._fiveButton);
             // FIVE Button event listener
             this._fiveButton.on("click", this._fiveButtonClick, this);
-            // add the SIX button to the PLAY scene ----------------------------------
-            this._sixButton = new objects.Button("ThreeButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 60);
-            this.addChild(this._fourButton);
+            // add the SIX button to the SLIDE2 scene ----------------------------------
+            this._sixButton = new objects.Button("SixButton", config.Screen.CENTER_X + 140, config.Screen.CENTER_Y + 60);
+            this.addChild(this._sixButton);
             // SIX Button event listener
-            this._fourButton.on("click", this._sixButtonClick, this);
-            // add the BACK button to the PLAY scene
+            this._sixButton.on("click", this._sixButtonClick, this);
+            // add the BACK button to the SLIDE2 scene
             this._backButton = new objects.Button("BackButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 60);
             this.addChild(this._backButton);
             // BACK Button event listener
@@ -45,7 +45,7 @@ var scenes;
             // add this scene to the global stage container
             stage.addChild(this);
         };
-        // PLAY Scene updates here
+        // SLIDE2 Scene updates here
         Slide2.prototype.update = function () {
         };
         //EVENT HANDLERS ++++++++++++++++++++
