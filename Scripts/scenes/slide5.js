@@ -3,18 +3,18 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-// SLIDE1 SCENE
+// SLIDE5 SCENE
 var scenes;
 (function (scenes) {
-    var Slide1 = (function (_super) {
-        __extends(Slide1, _super);
+    var Slide5 = (function (_super) {
+        __extends(Slide5, _super);
         // CONSTRUCTOR ++++++++++++++++++++++
-        function Slide1() {
+        function Slide5() {
             _super.call(this);
         }
         // PUBLIC METHODS +++++++++++++++++++++
         // Start Method
-        Slide1.prototype.start = function () {
+        Slide5.prototype.start = function () {
             // add the PLAY label to the scene
             this._playLabel = new createjs.Text("Choose a Number", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
@@ -22,21 +22,21 @@ var scenes;
             this._playLabel.x = config.Screen.CENTER_X;
             this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
-            // add the ONE button to the PLAY scene ----------------------------------
-            this._oneButton = new objects.Button("OneButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
-            // ONE Button event listener
-            this._oneButton.on("click", this._oneButtonClick, this);
-            // add the TWO button to the PLAY scene ----------------------------------
-            this._twoButton = new objects.Button("TwoButton", config.Screen.CENTER_X + 120, config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
-            // TWO Button event listener
-            this._oneButton.on("click", this._twoButtonClick, this);
-            // add the THREE button to the PLAY scene ----------------------------------
-            this._threeButton = new objects.Button("ThreeButton", config.Screen.CENTER_X + 140, config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
-            // THREE Button event listener
-            this._oneButton.on("click", this._threeButtonClick, this);
+            // add the THIRTEEN button to the PLAY scene ----------------------------------
+            this._thirteenButton = new objects.Button("ThirteenButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 60);
+            this.addChild(this._thirteenButton);
+            // thirteen Button event listener
+            this._thirteenButton.on("click", this._thirteenButtonClick, this);
+            // add the FOURTEEN button to the PLAY scene ----------------------------------
+            this._fourteenButton = new objects.Button("FourteenButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 60);
+            this.addChild(this._fourteenButton);
+            // FOURTEEN Button event listener
+            this._fourteenButton.on("click", this._fourteenButtonClick, this);
+            // add the FIFTEEN button to the PLAY scene ----------------------------------
+            this._fifteenButton = new objects.Button("FifteenButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 60);
+            this.addChild(this._fifteenButton);
+            // FIFTEEN Button event listener
+            this._fifteenButton.on("click", this._fifteenButtonClick, this);
             // add the BACK button to the PLAY scene
             this._backButton = new objects.Button("BackButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 60);
             this.addChild(this._backButton);
@@ -46,41 +46,41 @@ var scenes;
             stage.addChild(this);
         };
         // PLAY Scene updates here
-        Slide1.prototype.update = function () {
+        Slide5.prototype.update = function () {
         };
         //EVENT HANDLERS ++++++++++++++++++++
         // NEXT Button click event handler
-        Slide1.prototype._nextButtonClick = function (event) {
+        Slide5.prototype._nextButtonClick = function (event) {
             // Switch to the OVER Scene
             scene = config.Scene.OVER;
             changeScene();
         };
-        // ONE Button click event handler
-        Slide1.prototype._oneButtonClick = function (event) {
+        // THIRTEEN Button click event handler
+        Slide5.prototype._thirteenButtonClick = function (event) {
+            // Switch to the OVER Scene
+            scene = config.Scene.WIN;
+            changeScene();
+        };
+        // THIRTEEN Button click event handler
+        Slide5.prototype._fourteenButtonClick = function (event) {
             // Switch to the OVER Scene
             scene = config.Scene.OVER;
             changeScene();
         };
-        // ONE Button click event handler
-        Slide1.prototype._twoButtonClick = function (event) {
-            // Switch to the OVER Scene
-            scene = config.Scene.SLIDE2;
-            changeScene();
-        };
-        // ONE Button click event handler
-        Slide1.prototype._threeButtonClick = function (event) {
+        // THIRTEEN Button click event handler
+        Slide5.prototype._fifteenButtonClick = function (event) {
             // Switch to the OVER Scene
             scene = config.Scene.OVER;
             changeScene();
         };
         // BACK Button click event handler
-        Slide1.prototype._backButtonClick = function (event) {
+        Slide5.prototype._backButtonClick = function (event) {
             // Switch to the OVER Scene
             scene = config.Scene.MENU;
             changeScene();
         };
-        return Slide1;
+        return Slide5;
     })(objects.Scene);
-    scenes.Slide1 = Slide1;
+    scenes.Slide5 = Slide5;
 })(scenes || (scenes = {}));
-//# sourceMappingURL=slide1.js.map
+//# sourceMappingURL=slide5.js.map

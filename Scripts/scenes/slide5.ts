@@ -1,12 +1,12 @@
-// SLIDE1 SCENE
+// SLIDE5 SCENE
 module scenes {
-    export class Slide1 extends objects.Scene {
+    export class Slide5 extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _playLabel: createjs.Text;
         
-        private _oneButton: objects.Button;
-        private _twoButton: objects.Button;
-        private _threeButton: objects.Button;
+        private _thirteenButton: objects.Button;
+        private _fourteenButton: objects.Button;
+        private _fifteenButton: objects.Button;
         
         private _backButton: objects.Button;
         
@@ -30,37 +30,37 @@ module scenes {
 
 
 
-            // add the ONE button to the PLAY scene ----------------------------------
-            this._oneButton = new objects.Button(
-                "OneButton",
+
+
+            // add the THIRTEEN button to the PLAY scene ----------------------------------
+            this._thirteenButton = new objects.Button(
+                "ThirteenButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
+            this.addChild(this._thirteenButton);
            
-            // ONE Button event listener
-            this._oneButton.on("click", this._oneButtonClick, this);
+            // thirteen Button event listener
+            this._thirteenButton.on("click", this._thirteenButtonClick, this);
             
-            
-            // add the TWO button to the PLAY scene ----------------------------------
-            this._twoButton = new objects.Button(
-                "TwoButton",
-                config.Screen.CENTER_X + 120,
+            // add the FOURTEEN button to the PLAY scene ----------------------------------
+            this._fourteenButton = new objects.Button(
+                "FourteenButton",
+                config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
+            this.addChild(this._fourteenButton);
            
-            // TWO Button event listener
-            this._oneButton.on("click", this._twoButtonClick, this);
+            // FOURTEEN Button event listener
+            this._fourteenButton.on("click", this._fourteenButtonClick, this);
             
-            
-            // add the THREE button to the PLAY scene ----------------------------------
-            this._threeButton = new objects.Button(
-                "ThreeButton",
-                config.Screen.CENTER_X + 140,
+            // add the FIFTEEN button to the PLAY scene ----------------------------------
+            this._fifteenButton = new objects.Button(
+                "FifteenButton",
+                config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 60);
-            this.addChild(this._oneButton);
+            this.addChild(this._fifteenButton);
            
-            // THREE Button event listener
-            this._oneButton.on("click", this._threeButtonClick, this);
+            // FIFTEEN Button event listener
+            this._fifteenButton.on("click", this._fifteenButtonClick, this);
 
 
 
@@ -96,24 +96,24 @@ module scenes {
             changeScene();
         }
         
-        // ONE Button click event handler
-        private _oneButtonClick(event: createjs.MouseEvent) {
+        // THIRTEEN Button click event handler
+        private _thirteenButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.OVER;
+            scene = config.Scene.WIN;            
             changeScene();
         }
         
-         // ONE Button click event handler
-        private _twoButtonClick(event: createjs.MouseEvent) {
+         // THIRTEEN Button click event handler
+        private _fourteenButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.SLIDE2;
+            scene = config.Scene.OVER;
             changeScene();           
         }
         
-         // ONE Button click event handler
-        private _threeButtonClick(event: createjs.MouseEvent) {
+         // THIRTEEN Button click event handler
+        private _fifteenButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.OVER;
+            scene = config.Scene.OVER;            
             changeScene();
         }
         
