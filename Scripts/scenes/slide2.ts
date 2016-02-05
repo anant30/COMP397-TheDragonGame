@@ -1,14 +1,11 @@
-// SLIDE2 SCENE
+// PLAY SCENE
 module scenes {
     export class Slide2 extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _playLabel: createjs.Text;
-        private _slide2Image: createjs.Bitmap;
-        private _fourButton: objects.Button;
-        private _fiveButton: objects.Button;
-        private _sixButton: objects.Button;
-        
+        private _nextButton: objects.Button;
         private _backButton: objects.Button;
+        private _slide2Image: createjs.Bitmap;
         
         // CONSTRUCTOR ++++++++++++++++++++++
         constructor() {
@@ -19,49 +16,28 @@ module scenes {
         
         // Start Method
         public start(): void {
-            this._slide2Image = new createjs.Bitmap("../../Assets/images/House2.png");
-            this.addChild(this._slide2Image);    
-            // add the SLIDE2 label to the scene
-            this._playLabel = new createjs.Text("Choose a Number", "60px Consolas", "#000000");
+            //add the background image
+            this._slide2Image = new createjs.Bitmap("../../Assets/images/House2.gif");
+            this.addChild(this._slide2Image);  
+            // add the PLAY label to the scene
+            this._playLabel = new createjs.Text("Game Scene", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             this._playLabel.x = config.Screen.CENTER_X;
             this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
 
-
-            // add the FOUR button to the SLIDE2 scene ----------------------------------
-            this._fourButton = new objects.Button(
-                "FourButton",
+            // add the NEXT button to the PLAY scene
+            this._nextButton = new objects.Button(
+                "NextButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 60);
-            this.addChild(this._fourButton);
+            this.addChild(this._nextButton);
            
-            // four Button event listener
-            this._fourButton.on("click", this._fourButtonClick, this);
-            
-            // add the FIVE button to the SLIDE2 scene ----------------------------------
-            this._fiveButton = new objects.Button(
-                "FiveButton",
-                config.Screen.CENTER_X + 120,
-                config.Screen.CENTER_Y + 60);
-            this.addChild(this._fiveButton);
-           
-            // FIVE Button event listener
-            this._fiveButton.on("click", this._fiveButtonClick, this);
-            
-            // add the SIX button to the SLIDE2 scene ----------------------------------
-            this._sixButton = new objects.Button(
-                "SixButton",
-                config.Screen.CENTER_X + 140,
-                config.Screen.CENTER_Y + 60);
-            this.addChild(this._sixButton);
-           
-            // SIX Button event listener
-            this._sixButton.on("click", this._sixButtonClick, this);
+            // NEXT Button event listener
+            this._nextButton.on("click", this._nextButtonClick, this);
 
-
-            // add the BACK button to the SLIDE2 scene -----------------------------------
+            // add the BACK button to the PLAY scene
             this._backButton = new objects.Button(
                 "BackButton",
                 config.Screen.CENTER_X - 100,
@@ -76,7 +52,7 @@ module scenes {
             stage.addChild(this);
         }
 
-        // SLIDE2 Scene updates here
+        // PLAY Scene updates here
         public update(): void {
 
         }
@@ -88,27 +64,6 @@ module scenes {
         private _nextButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
             scene = config.Scene.OVER;
-            changeScene();
-        }
-        
-        // FOUR Button click event handler
-        private _fourButtonClick(event: createjs.MouseEvent) {
-            // Switch to the OVER Scene
-            scene = config.Scene.OVER;
-            changeScene();
-        }
-        
-         // FIVE Button click event handler
-        private _fiveButtonClick(event: createjs.MouseEvent) {
-            // Switch to the OVER Scene
-            scene = config.Scene.OVER;
-            changeScene();           
-        }
-        
-         // SIX Button click event handler
-        private _sixButtonClick(event: createjs.MouseEvent) {
-            // Switch to the OVER Scene
-            scene = config.Scene.SLIDE3;            
             changeScene();
         }
         

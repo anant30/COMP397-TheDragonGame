@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         Slide7.prototype.start = function () {
             //add the background image
-            this._slide7Image = new createjs.Bitmap("../../Assets/images/House1.png");
+            this._slide7Image = new createjs.Bitmap("../../Assets/images/House7.gif");
             this.addChild(this._slide7Image);
             // add the PLAY label to the scene
             this._playLabel = new createjs.Text("Game Scene", "60px Consolas", "#000000");
