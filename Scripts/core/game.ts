@@ -16,6 +16,7 @@ var slide1:scenes.Slide1;
 var slide2:scenes.Slide2;
 var slide3:scenes.Slide3;
 var slide4:scenes.Slide4;
+var slide5:scenes.Slide5;
 
 var over:scenes.Over;
 
@@ -119,6 +120,14 @@ function changeScene(): void {
             slide4 = new scenes.Slide4();
             currentScene = slide4;
             console.log("Starting SLIDE1 Scene");
+            break; 
+            
+        case config.Scene.SLIDE5:
+            // show the SLIDE5 scene
+            stage.removeAllChildren();
+            slide5 = new scenes.Slide5();
+            currentScene = slide5;
+            console.log("Starting SLIDE5 Scene");
             break; 
             
         case config.Scene.OVER:

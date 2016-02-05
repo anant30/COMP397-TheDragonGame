@@ -99,7 +99,7 @@ module scenes {
         // TEN Button click event handler
         private _tenButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.SLIDE5;            
+            scene = config.Scene.OVER;            
             changeScene();
         }
         
@@ -113,7 +113,7 @@ module scenes {
          // TEN Button click event handler
         private _twelveButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.OVER;            
+            scene = config.Scene.SLIDE5;            
             changeScene();
         }
         

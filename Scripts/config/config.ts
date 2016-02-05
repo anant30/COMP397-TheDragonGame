@@ -9,12 +9,9 @@
         public static SLIDE2: number = 3;
         public static SLIDE3: number = 4;
         public static SLIDE4: number = 5;
-        
-        
-        
-        
-        
-        public static OVER: number = 6;
+        public static SLIDE5: number = 6;
+          
+        public static OVER: number = 7;
         
         
     }

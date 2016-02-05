@@ -58,7 +58,7 @@ var scenes;
         // TEN Button click event handler
         Slide4.prototype._tenButtonClick = function (event) {
             // Switch to the OVER Scene
-            scene = config.Scene.SLIDE5;
+            scene = config.Scene.OVER;
             changeScene();
         };
         // TEN Button click event handler
@@ -70,7 +70,7 @@ var scenes;
         // TEN Button click event handler
         Slide4.prototype._twelveButtonClick = function (event) {
             // Switch to the OVER Scene
-            scene = config.Scene.OVER;
+            scene = config.Scene.SLIDE5;
             changeScene();
         };
         // BACK Button click event handler

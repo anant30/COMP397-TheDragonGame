@@ -12,6 +12,7 @@ var slide1;
 var slide2;
 var slide3;
 var slide4;
+var slide5;
 var over;
 function init() {
     // create a reference the HTML canvas Element
@@ -95,6 +96,13 @@ function changeScene() {
             slide4 = new scenes.Slide4();
             currentScene = slide4;
             console.log("Starting SLIDE1 Scene");
+            break;
+        case config.Scene.SLIDE5:
+            // show the SLIDE5 scene
+            stage.removeAllChildren();
+            slide5 = new scenes.Slide5();
+            currentScene = slide5;
+            console.log("Starting SLIDE5 Scene");
             break;
         case config.Scene.OVER:
             // show the game OVER scene

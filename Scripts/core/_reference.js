@@ -9,5 +9,6 @@
 /// <reference path="../scenes/slide1.ts" />
 /// <reference path="../scenes/slide2.ts" />
 /// <reference path="../scenes/slide3.ts" />
-/// <reference path="../scenes/slide4.ts" /> 
+/// <reference path="../scenes/slide4.ts" />
+/// <reference path="../scenes/slide5.ts" /> 
 //# sourceMappingURL=_reference.js.map
