@@ -22,7 +22,7 @@ module scenes {
         public start(): void {
             
             //add the background image
-            this._slide1Image = new createjs.Bitmap("../../Assets/images/house1.png");
+            this._slide1Image = new createjs.Bitmap("../../Assets/images/House1.png");
                 
             // add the SLIDE1 label to the scene
             this._playLabel = new createjs.Text("Choose a Number", "60px Consolas", "#000000");
