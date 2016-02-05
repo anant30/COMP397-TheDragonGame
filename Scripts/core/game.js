@@ -9,6 +9,9 @@ var scene;
 var menu;
 var play;
 var slide1;
+var slide2;
+var slide3;
+var slide4;
 var over;
 function init() {
     // create a reference the HTML canvas Element
@@ -66,10 +69,31 @@ function changeScene() {
             console.log("Starting PLAY Scene");
             break;
         case config.Scene.SLIDE1:
-            // show the PLAY scene
+            // show the SLIDE1 scene
             stage.removeAllChildren();
             slide1 = new scenes.Slide1();
             currentScene = slide1;
+            console.log("Starting SLIDE1 Scene");
+            break;
+        case config.Scene.SLIDE2:
+            // show the SLIDE2 scene
+            stage.removeAllChildren();
+            slide2 = new scenes.Slide2();
+            currentScene = slide2;
+            console.log("Starting SLIDE2 Scene");
+            break;
+        case config.Scene.SLIDE3:
+            // show the SLIDE3 scene
+            stage.removeAllChildren();
+            slide3 = new scenes.Slide3();
+            currentScene = slide3;
+            console.log("Starting SLIDE3 Scene");
+            break;
+        case config.Scene.SLIDE4:
+            // show the SLIDE4 scene
+            stage.removeAllChildren();
+            slide4 = new scenes.Slide4();
+            currentScene = slide4;
             console.log("Starting SLIDE1 Scene");
             break;
         case config.Scene.OVER:

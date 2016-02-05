@@ -6,9 +6,15 @@
         public static PLAY: number = 1;
         
         public static SLIDE1: number = 2;
+        public static SLIDE2: number = 3;
+        public static SLIDE3: number = 4;
+        public static SLIDE4: number = 5;
         
         
-        public static OVER: number = 2;
+        
+        
+        
+        public static OVER: number = 6;
         
         
     }

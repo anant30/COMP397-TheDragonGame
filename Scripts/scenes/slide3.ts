@@ -1,4 +1,4 @@
-// SLIDE1 SCENE
+// SLIDE3 SCENE
 module scenes {
     export class Slide3 extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++

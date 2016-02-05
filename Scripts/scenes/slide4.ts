@@ -1,4 +1,4 @@
-// SLIDE1 SCENE
+// SLIDE4 SCENE
 module scenes {
     export class Slide4 extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
@@ -99,7 +99,7 @@ module scenes {
         // TEN Button click event handler
         private _tenButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.SLIDE4;            
+            scene = config.Scene.SLIDE5;            
             changeScene();
         }
         
