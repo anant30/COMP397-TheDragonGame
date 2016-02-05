@@ -37,6 +37,8 @@ module scenes {
                 config.Screen.CENTER_Y + 60);
             this.addChild(this._startButton);
             
+            
+        
             // START Button event listener
             this._startButton.on("click", this._startButtonClick, this);
             
