@@ -42,9 +42,16 @@ var scenes;
             // Switch to the PLAY Scene
             scene = config.Scene.PLAY;
             changeScene();
+            pictureChange();
         };
         return Menu;
     })(objects.Scene);
     scenes.Menu = Menu;
 })(scenes || (scenes = {}));
 //# sourceMappingURL=menu.js.map
+
+    function pictureChange()
+            {
+                document.getElementById('firstpage').src = "../Assets/images/firstpage.jpg";
+            
+            }
