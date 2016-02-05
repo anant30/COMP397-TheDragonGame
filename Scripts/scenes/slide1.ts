@@ -20,7 +20,7 @@ module scenes {
         // Start Method
         public start(): void {
 
-            // add the PLAY label to the scene
+            // add the SLIDE1 label to the scene
             this._playLabel = new createjs.Text("Choose a Number", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
@@ -30,7 +30,7 @@ module scenes {
 
 
 
-            // add the ONE button to the PLAY scene ----------------------------------
+            // add the ONE button to the SLIDE1 scene ----------------------------------
             this._oneButton = new objects.Button(
                 "OneButton",
                 config.Screen.CENTER_X + 100,
@@ -41,7 +41,7 @@ module scenes {
             this._oneButton.on("click", this._oneButtonClick, this);
             
             
-            // add the TWO button to the PLAY scene ----------------------------------
+            // add the TWO button to the SLIDE1 scene ----------------------------------
             this._twoButton = new objects.Button(
                 "TwoButton",
                 config.Screen.CENTER_X + 120,
@@ -52,7 +52,7 @@ module scenes {
             this._twoButton.on("click", this._twoButtonClick, this);
             
             
-            // add the THREE button to the PLAY scene ----------------------------------
+            // add the THREE button to the SLIDE1 scene ----------------------------------
             this._threeButton = new objects.Button(
                 "ThreeButton",
                 config.Screen.CENTER_X + 140,
@@ -66,10 +66,10 @@ module scenes {
 
 
 
-            // add the BACK button to the PLAY scene
+            // add the BACK button to the SLIDE1 scene
             this._backButton = new objects.Button(
                 "BackButton",
-                config.Screen.CENTER_X - 100,
+                config.Screen.CENTER_X - 150,
                 config.Screen.CENTER_Y + 60);
             this.addChild(this._backButton);
            
@@ -81,7 +81,7 @@ module scenes {
             stage.addChild(this);
         }
 
-        // PLAY Scene updates here
+        // SLIDE1 Scene updates here
         public update(): void {
 
         }
@@ -99,7 +99,7 @@ module scenes {
         // ONE Button click event handler
         private _oneButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.OVER;
+            scene = config.Scene.SLIDE2;
             changeScene();
         }
         
