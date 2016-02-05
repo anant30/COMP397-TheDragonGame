@@ -6,8 +6,8 @@ var config;
         }
         Scene.MENU = 0;
         Scene.PLAY = 1;
+        Scene.SLIDE1 = 2;
         Scene.OVER = 2;
-        Scene.SECOND = 3;
         return Scene;
     })();
     config.Scene = Scene;

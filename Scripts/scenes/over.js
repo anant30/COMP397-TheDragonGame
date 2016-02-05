@@ -37,7 +37,7 @@ var scenes;
         // BACK Button click event handler
         Over.prototype._backButtonClick = function (event) {
             // Switch to the OVER Scene
-            scene = config.Scene.PLAY;
+            scene = config.Scene.SLIDE1;
             changeScene();
         };
         return Over;

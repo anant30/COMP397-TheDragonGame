@@ -16,15 +16,13 @@ var scenes;
         // Start Method
         Menu.prototype.start = function () {
             // add the MENU label to the scene
-            this._gameLabel = new createjs.Text("Scene", "60px Consolas", "#000000");
+            this._gameLabel = new createjs.Text("The Number Game", "60px Consolas", "#000000");
+            this._gameLabel = new createjs.Text("How far can you go???", "60px Consolas", "#00ff00");
             this._gameLabel.regX = this._gameLabel.getMeasuredWidth() * 0.5;
             this._gameLabel.regY = this._gameLabel.getMeasuredHeight() * 0.5;
             this._gameLabel.x = config.Screen.CENTER_X;
             this._gameLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._gameLabel);
-            // add background to the MENU Scene
-            this._background = new objects.Background("firstpage");
-             this.addChild(this._background);
             // add the START button to the MENU scene
             this._startButton = new objects.Button("StartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 60);
             this.addChild(this._startButton);
@@ -39,8 +37,8 @@ var scenes;
         //EVENT HANDLERS ++++++++++++++++++++
         // START Button click event handler
         Menu.prototype._startButtonClick = function (event) {
-            // Switch to the PLAY Scene
-            scene = config.Scene.PLAY;
+            // Switch to the SLIDE1 Scene
+            scene = config.Scene.SLIDE1;
             changeScene();
         };
         return Menu;

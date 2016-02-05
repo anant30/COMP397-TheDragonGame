@@ -4,8 +4,12 @@
     export class Scene {
         public static MENU: number = 0;
         public static PLAY: number = 1;
+        
+        public static SLIDE1: number = 2;
+        
+        
         public static OVER: number = 2;
-        public static SECOND: number = 3;
+        
         
     }
     

@@ -4,7 +4,7 @@ module scenes {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _gameLabel:createjs.Text;
         private _startButton:objects.Button;
-        private _background:createjs.ImageLoader;
+        
         
         // CONSTRUCTOR ++++++++++++++++++++++
         constructor() {
@@ -17,7 +17,8 @@ module scenes {
         public start(): void {
             
             // add the MENU label to the scene
-            this._gameLabel = new createjs.Text("Scene", "60px Consolas", "#000000");            
+            this._gameLabel = new createjs.Text("The Number Game", "60px Consolas", "#000000");    
+            this._gameLabel = new createjs.Text("How far can you go???", "60px Consolas", "#00ff00");        
             this._gameLabel.regX = this._gameLabel.getMeasuredWidth() * 0.5;
             this._gameLabel.regY = this._gameLabel.getMeasuredHeight() * 0.5;
             this._gameLabel.x = config.Screen.CENTER_X;
@@ -25,9 +26,7 @@ module scenes {
             
             this.addChild(this._gameLabel);
             
-            // add background to the MENU Scene
-            //this._background = new objects.Background("firstpage", config.Screen.CENTER_X, config.Screen.CENTER_Y);
-               // this.addChild(this._background);
+            
             
 
             // add the START button to the MENU scene
@@ -56,8 +55,8 @@ module scenes {
         
         // START Button click event handler
         private _startButtonClick(event:createjs.MouseEvent) {
-            // Switch to the PLAY Scene
-            scene = config.Scene.PLAY;
+            // Switch to the SLIDE1 Scene
+            scene = config.Scene.SLIDE1;
             changeScene();
         }
     }

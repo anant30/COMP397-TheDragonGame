@@ -11,6 +11,9 @@ var scene:number;
 // Game Scenes
 var menu:scenes.Menu;
 var play:scenes.Play;
+
+var slide1:scenes.Slide1;
+
 var over:scenes.Over;
 
 function init():void {
@@ -74,6 +77,7 @@ function changeScene(): void {
             currentScene = menu;
             console.log("Starting MENU Scene");
             break;               
+            
         case config.Scene.PLAY:
             // show the PLAY scene
             stage.removeAllChildren();
@@ -81,6 +85,15 @@ function changeScene(): void {
             currentScene = play;
             console.log("Starting PLAY Scene");
             break;
+        
+        case config.Scene.SLIDE1:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            slide1 = new scenes.Slide1();
+            currentScene = slide1;
+            console.log("Starting SLIDE1 Scene");
+            break;
+            
         case config.Scene.OVER:
             // show the game OVER scene
             stage.removeAllChildren();

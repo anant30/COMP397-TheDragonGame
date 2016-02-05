@@ -1,9 +1,13 @@
-// PLAY SCENE
+// SLIDE1 SCENE
 module scenes {
-    export class SecondPage extends objects.Scene {
+    export class Slide1 extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _playLabel: createjs.Text;
-        private _nextButton: objects.Button;
+        
+        private _oneButton: objects.Button;
+        private _twoButton: objects.Button;
+        private _threeButton: objects.Button;
+        
         private _backButton: objects.Button;
         
         // CONSTRUCTOR ++++++++++++++++++++++
@@ -17,22 +21,50 @@ module scenes {
         public start(): void {
 
             // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("Game Scene", "60px Consolas", "#000000");
+            this._playLabel = new createjs.Text("Choose a Number", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             this._playLabel.x = config.Screen.CENTER_X;
             this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
 
-            // add the NEXT button to the PLAY scene
-            this._nextButton = new objects.Button(
-                "NextButton",
+
+
+
+
+            // add the ONE button to the PLAY scene ----------------------------------
+            this._oneButton = new objects.Button(
+                "OneButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 60);
-            this.addChild(this._nextButton);
+            this.addChild(this._oneButton);
            
-            // NEXT Button event listener
-            this._nextButton.on("click", this._nextButtonClick, this);
+            // ONE Button event listener
+            this._oneButton.on("click", this._oneButtonClick, this);
+            
+            // add the TWO button to the PLAY scene ----------------------------------
+            this._twoButton = new objects.Button(
+                "TwoButton",
+                config.Screen.CENTER_X + 100,
+                config.Screen.CENTER_Y + 60);
+            this.addChild(this._oneButton);
+           
+            // TWO Button event listener
+            this._oneButton.on("click", this._twoButtonClick, this);
+            
+            // add the THREE button to the PLAY scene ----------------------------------
+            this._threeButton = new objects.Button(
+                "ThreeButton",
+                config.Screen.CENTER_X + 100,
+                config.Screen.CENTER_Y + 60);
+            this.addChild(this._oneButton);
+           
+            // THREE Button event listener
+            this._oneButton.on("click", this._threeButtonClick, this);
+
+
+
+
 
             // add the BACK button to the PLAY scene
             this._backButton = new objects.Button(
