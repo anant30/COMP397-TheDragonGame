@@ -4,6 +4,7 @@ module scenes {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _playLabel: createjs.Text;
         
+        private _slide1Image: createjs.Bitmap;
         private _oneButton: objects.Button;
         private _twoButton: objects.Button;
         private _threeButton: objects.Button;
@@ -19,7 +20,10 @@ module scenes {
         
         // Start Method
         public start(): void {
-
+            
+            //add the background image
+            this._slide1Image = new createjs.Bitmap("../../Assets/images/house1.png");
+                
             // add the SLIDE1 label to the scene
             this._playLabel = new createjs.Text("Choose a Number", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;

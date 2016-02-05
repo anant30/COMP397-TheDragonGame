@@ -4,7 +4,7 @@ module scenes {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _overLabel: createjs.Text;
         private _backButton: objects.Button;
-        
+        private _overImage: createjs.Bitmap;
         // CONSTRUCTOR ++++++++++++++++++++++
         constructor() {
             super();
@@ -14,7 +14,7 @@ module scenes {
         
         // Start Method
         public start(): void {
-
+            this._overImage = new createjs.Bitmap("../../Assets/images/Over.png");
             // add the PLAY label to the scene
             this._overLabel = new createjs.Text("Over Scene", "60px Consolas", "#000000");
             this._overLabel.regX = this._overLabel.getMeasuredWidth() * 0.5;
