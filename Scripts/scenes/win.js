@@ -3,7 +3,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-// OVER SCENE
+// WIN SCENE
 var scenes;
 (function (scenes) {
     var Win = (function (_super) {
@@ -15,14 +15,14 @@ var scenes;
         // PUBLIC METHODS +++++++++++++++++++++
         // Start Method
         Win.prototype.start = function () {
-            // add the PLAY label to the scene
+            // add the WIN label to the scene
             this._overLabel = new createjs.Text("YOU WON", "60px Consolas", "#000000");
             this._overLabel.regX = this._overLabel.getMeasuredWidth() * 0.5;
             this._overLabel.regY = this._overLabel.getMeasuredHeight() * 0.5;
             this._overLabel.x = config.Screen.CENTER_X;
             this._overLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._overLabel);
-            // add the BACK button to the OVER scene
+            // add the BACK button to the WIN scene
             this._backButton = new objects.Button("BackButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 60);
             this.addChild(this._backButton);
             // BACK Button event listener
@@ -30,13 +30,13 @@ var scenes;
             // add this scene to the global stage container
             stage.addChild(this);
         };
-        // PLAY Scene updates here
+        // WIN Scene updates here
         Win.prototype.update = function () {
         };
         //EVENT HANDLERS ++++++++++++++++++++
         // BACK Button click event handler
         Win.prototype._backButtonClick = function (event) {
-            // Switch to the OVER Scene
+            // Switch to the WIN Scene
             scene = config.Scene.SLIDE1;
             changeScene();
         };

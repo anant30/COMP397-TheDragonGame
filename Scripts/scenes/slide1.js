@@ -49,12 +49,6 @@ var scenes;
         Slide1.prototype.update = function () {
         };
         //EVENT HANDLERS ++++++++++++++++++++
-        // NEXT Button click event handler
-        Slide1.prototype._nextButtonClick = function (event) {
-            // Switch to the OVER Scene
-            scene = config.Scene.OVER;
-            changeScene();
-        };
         // ONE Button click event handler
         Slide1.prototype._oneButtonClick = function (event) {
             // Switch to the OVER Scene

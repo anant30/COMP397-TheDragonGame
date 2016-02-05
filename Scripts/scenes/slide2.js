@@ -37,7 +37,7 @@ var scenes;
             this.addChild(this._sixButton);
             // SIX Button event listener
             this._sixButton.on("click", this._sixButtonClick, this);
-            // add the BACK button to the SLIDE2 scene
+            // add the BACK button to the SLIDE2 scene -----------------------------------
             this._backButton = new objects.Button("BackButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 60);
             this.addChild(this._backButton);
             // BACK Button event listener
@@ -61,13 +61,13 @@ var scenes;
             scene = config.Scene.OVER;
             changeScene();
         };
-        // FOUR Button click event handler
+        // FIVE Button click event handler
         Slide2.prototype._fiveButtonClick = function (event) {
             // Switch to the OVER Scene
             scene = config.Scene.OVER;
             changeScene();
         };
-        // FOUR Button click event handler
+        // SIX Button click event handler
         Slide2.prototype._sixButtonClick = function (event) {
             // Switch to the OVER Scene
             scene = config.Scene.SLIDE3;

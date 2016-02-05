@@ -29,9 +29,6 @@ module scenes {
             this.addChild(this._playLabel);
 
 
-
-
-
             // add the FOUR button to the SLIDE2 scene ----------------------------------
             this._fourButton = new objects.Button(
                 "FourButton",
@@ -63,10 +60,7 @@ module scenes {
             this._sixButton.on("click", this._sixButtonClick, this);
 
 
-
-
-
-            // add the BACK button to the SLIDE2 scene
+            // add the BACK button to the SLIDE2 scene -----------------------------------
             this._backButton = new objects.Button(
                 "BackButton",
                 config.Screen.CENTER_X - 100,
@@ -103,14 +97,14 @@ module scenes {
             changeScene();
         }
         
-         // FOUR Button click event handler
+         // FIVE Button click event handler
         private _fiveButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
             scene = config.Scene.OVER;
             changeScene();           
         }
         
-         // FOUR Button click event handler
+         // SIX Button click event handler
         private _sixButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
             scene = config.Scene.SLIDE3;            

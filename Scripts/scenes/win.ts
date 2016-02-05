@@ -1,4 +1,4 @@
-// OVER SCENE
+// WIN SCENE
 module scenes {
     export class Win extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
@@ -15,7 +15,7 @@ module scenes {
         // Start Method
         public start(): void {
 
-            // add the PLAY label to the scene
+            // add the WIN label to the scene
             this._overLabel = new createjs.Text("YOU WON", "60px Consolas", "#000000");
             this._overLabel.regX = this._overLabel.getMeasuredWidth() * 0.5;
             this._overLabel.regY = this._overLabel.getMeasuredHeight() * 0.5;
@@ -23,7 +23,7 @@ module scenes {
             this._overLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._overLabel);
 
-            // add the BACK button to the OVER scene
+            // add the BACK button to the WIN scene
             this._backButton = new objects.Button(
                 "BackButton",
                 config.Screen.CENTER_X,
@@ -38,7 +38,7 @@ module scenes {
             stage.addChild(this);
         }
 
-        // PLAY Scene updates here
+        // WIN Scene updates here
         public update(): void {
 
         }
@@ -48,7 +48,7 @@ module scenes {
         
         // BACK Button click event handler
         private _backButtonClick(event: createjs.MouseEvent) {
-            // Switch to the OVER Scene
+            // Switch to the WIN Scene
             scene = config.Scene.SLIDE1;
             changeScene();
         }

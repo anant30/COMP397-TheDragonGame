@@ -20,7 +20,7 @@ module scenes {
         // Start Method
         public start(): void {
 
-            // add the PLAY label to the scene
+            // add the SLIDE3 label to the scene
             this._playLabel = new createjs.Text("Choose a Number", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
@@ -32,7 +32,7 @@ module scenes {
 
 
 
-            // add the SEVEN button to the PLAY scene ----------------------------------
+            // add the SEVEN button to the SLIDE3 scene ----------------------------------
             this._sevenButton = new objects.Button(
                 "SevenButton",
                 config.Screen.CENTER_X + 100,
@@ -40,9 +40,9 @@ module scenes {
             this.addChild(this._sevenButton);
            
             // seven Button event listener
-            this._eightButton.on("click", this._sevenButtonClick, this);
+            this._sevenButton.on("click", this._sevenButtonClick, this);
             
-            // add the EIGHT button to the PLAY scene ----------------------------------
+            // add the EIGHT button to the SLIDE3 scene ----------------------------------
             this._eightButton = new objects.Button(
                 "EightButton",
                 config.Screen.CENTER_X + 100,
@@ -52,21 +52,21 @@ module scenes {
             // EIGHT Button event listener
             this._eightButton.on("click", this._eightButtonClick, this);
             
-            // add the NINE button to the PLAY scene ----------------------------------
+            // add the NINE button to the SLIDE3 scene ----------------------------------
             this._nineButton = new objects.Button(
-                "ThreeButton",
+                "NineButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 60);
-            this.addChild(this._sevenButton);
+            this.addChild(this._nineButton);
            
             // NINE Button event listener
-            this._sevenButton.on("click", this._nineButtonClick, this);
+            this._nineButton.on("click", this._nineButtonClick, this);
 
 
 
 
 
-            // add the BACK button to the PLAY scene
+            // add the BACK button to the SLIDE3 scene
             this._backButton = new objects.Button(
                 "BackButton",
                 config.Screen.CENTER_X - 100,
@@ -81,36 +81,30 @@ module scenes {
             stage.addChild(this);
         }
 
-        // PLAY Scene updates here
+        // SLIDE3 Scene updates here
         public update(): void {
 
         }
         
         
         //EVENT HANDLERS ++++++++++++++++++++
-        
-        // NEXT Button click event handler
-        private _nextButtonClick(event: createjs.MouseEvent) {
-            // Switch to the OVER Scene
-            scene = config.Scene.OVER;
-            changeScene();
-        }
-        
+       
+       
         // SEVEN Button click event handler
         private _sevenButtonClick(event: createjs.MouseEvent) {
-            // Switch to the OVER Scene
+            // Switch to the SLIDE4 Scene
             scene = config.Scene.SLIDE4;            
             changeScene();
         }
         
-         // SEVEN Button click event handler
+         // EIGHT Button click event handler
         private _eightButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
             scene = config.Scene.OVER;
             changeScene();           
         }
         
-         // SEVEN Button click event handler
+         // NINE Button click event handler
         private _nineButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
             scene = config.Scene.OVER;            
