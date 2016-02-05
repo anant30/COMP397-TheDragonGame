@@ -14,3 +14,7 @@ canvas {
     width: 80%;
     margin: 0 auto;
 }
+
+.menu {
+  background: url(scoobydoo_crew.jpg);
+}
