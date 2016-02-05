@@ -52,6 +52,6 @@ var scenes;
 
     function pictureChange()
             {
-                document.getElementById('firstpage').src = "../Assets/images/firstpage.jpg";
-            
+                document.getElementById('firstpage').src = "Assets/images/firstpage.jpg";
+          
             }
