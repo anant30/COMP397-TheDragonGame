@@ -19,14 +19,14 @@ var scenes;
             this._overImage = new createjs.Bitmap("../../Assets/images/Over.png");
             this.addChild(this._overImage);
             // add the PLAY label to the scene
-            this._overLabel = new createjs.Text("Over Scene", "60px Consolas", "#000000");
+            this._overLabel = new createjs.Text("You have been ate up live by GHOSTS", "30px Consolas", "#000000");
             this._overLabel.regX = this._overLabel.getMeasuredWidth() * 0.5;
             this._overLabel.regY = this._overLabel.getMeasuredHeight() * 0.5;
             this._overLabel.x = config.Screen.CENTER_X;
             this._overLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._overLabel);
             // add the BACK button to the OVER scene
-            this._backButton = new objects.Button("BackButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 60);
+            this._backButton = new objects.Button("HomeButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 60);
             this.addChild(this._backButton);
             // BACK Button event listener
             this._backButton.on("click", this._backButtonClick, this);

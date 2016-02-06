@@ -3,6 +3,7 @@ module scenes {
     export class Menu extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _gameLabel:createjs.Text;
+        private _gameLabel1:createjs.Text;
         private _startButton:objects.Button;
         
         private _introImage: createjs.Bitmap;
@@ -28,6 +29,14 @@ module scenes {
             this._gameLabel.y = config.Screen.CENTER_Y;
             
             this.addChild(this._gameLabel);
+            
+            this._gameLabel1 = new createjs.Text("Go through the haunted houses to find the mystery", "20px Consolas", "#ffffff");                  
+            this._gameLabel1.regX = this._gameLabel1.getMeasuredWidth() * 0.5;
+            this._gameLabel1.regY = this._gameLabel1.getMeasuredHeight() * 0.5;
+            this._gameLabel1.x = config.Screen.CENTER_X;
+            this._gameLabel1.y = config.Screen.CENTER_Y;
+            
+            this.addChild(this._gameLabel1);
             
             
             

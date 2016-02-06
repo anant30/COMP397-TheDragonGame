@@ -24,6 +24,12 @@ var scenes;
             this._gameLabel.x = config.Screen.CENTER_X;
             this._gameLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._gameLabel);
+            this._gameLabel1 = new createjs.Text("Go through the haunted houses to find the mystery", "20px Consolas", "#ffffff");
+            this._gameLabel1.regX = this._gameLabel1.getMeasuredWidth() * 0.5;
+            this._gameLabel1.regY = this._gameLabel1.getMeasuredHeight() * 0.5;
+            this._gameLabel1.x = config.Screen.CENTER_X;
+            this._gameLabel1.y = config.Screen.CENTER_Y;
+            this.addChild(this._gameLabel1);
             // add the START button to the MENU scene
             this._startButton = new objects.Button("StartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 60);
             this.addChild(this._startButton);

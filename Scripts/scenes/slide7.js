@@ -19,19 +19,19 @@ var scenes;
             this._slide7Image = new createjs.Bitmap("../../Assets/images/House7.gif");
             this.addChild(this._slide7Image);
             // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("Game Scene", "60px Consolas", "#000000");
+            this._playLabel = new createjs.Text("Looks like they Found their way out.. should they find their friends?", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             this._playLabel.x = config.Screen.CENTER_X;
             this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
             // add the NEXT button to the PLAY scene
-            this._nextButton = new objects.Button("NextButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 60);
+            this._nextButton = new objects.Button("YesButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 60);
             this.addChild(this._nextButton);
             // NEXT Button event listener
             this._nextButton.on("click", this._nextButtonClick, this);
             // add the BACK button to the PLAY scene
-            this._backButton = new objects.Button("BackButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 60);
+            this._backButton = new objects.Button("NoButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 60);
             this.addChild(this._backButton);
             // BACK Button event listener
             this._backButton.on("click", this._backButtonClick, this);

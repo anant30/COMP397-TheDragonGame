@@ -26,7 +26,7 @@ module scenes {
 
             // add the BACK button to the WIN scene
             this._backButton = new objects.Button(
-                "BackButton",
+                "HomeButton",
                 config.Screen.CENTER_X,
                 config.Screen.CENTER_Y + 60);
             this.addChild(this._backButton);

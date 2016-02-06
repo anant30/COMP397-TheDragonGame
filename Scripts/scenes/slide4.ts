@@ -20,7 +20,7 @@ module scenes {
             this._slide4Image = new createjs.Bitmap("../../Assets/images/House4.gif");
             this.addChild(this._slide4Image);  
             // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("Game Scene", "60px Consolas", "#000000");
+            this._playLabel = new createjs.Text("Looks like scooby found something from closet.. Stop him dancing?", "30px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             this._playLabel.x = config.Screen.CENTER_X;
@@ -29,7 +29,7 @@ module scenes {
 
             // add the NEXT button to the PLAY scene
             this._nextButton = new objects.Button(
-                "NextButton",
+                "YesButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 60);
             this.addChild(this._nextButton);
@@ -39,7 +39,7 @@ module scenes {
 
             // add the BACK button to the PLAY scene
             this._backButton = new objects.Button(
-                "BackButton",
+                "NoButton",
                 config.Screen.CENTER_X - 100,
                 config.Screen.CENTER_Y + 60);
             this.addChild(this._backButton);
