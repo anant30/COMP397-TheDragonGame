@@ -21,7 +21,7 @@ module scenes {
             this.addChild(this._introImage);
             
             // add the MENU label to the scene
-            this._gameLabel = new createjs.Text("Scooby Dooby Do.. where are you", "30px Consolas", "#ff00ff");                  
+            this._gameLabel = new createjs.Text("Scooby Dooby Do.. where are you", "30px Consolas", "#ffffff");                  
             this._gameLabel.regX = this._gameLabel.getMeasuredWidth() * 0.5;
             this._gameLabel.regY = this._gameLabel.getMeasuredHeight() * 0.5;
             this._gameLabel.x = config.Screen.CENTER_X;
