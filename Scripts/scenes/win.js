@@ -15,7 +15,7 @@ var scenes;
         // PUBLIC METHODS +++++++++++++++++++++
         // Start Method
         Win.prototype.start = function () {
-            this._winImage = new createjs.Bitmap("../../Assets/images/Win.png");
+            this._winImage = new createjs.Bitmap("../../Assets/images/Win.gif");
             this.addChild(this._winImage);
             // add the WIN label to the scene
             this._overLabel = new createjs.Text("YOU WON", "60px Consolas", "#ffffff");

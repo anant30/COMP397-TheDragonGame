@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         Over3.prototype.start = function () {
             // adding background
-            this._overImage = new createjs.Bitmap("../../Assets/images/Over.gif");
+            this._overImage = new createjs.Bitmap("../../Assets/images/Over3.gif");
             this.addChild(this._overImage);
             // add the PLAY label to the scene
             this._overLabel = new createjs.Text("CRAP! we lost!", "30px Consolas", "#ffffff");
