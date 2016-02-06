@@ -19,6 +19,12 @@ var slide2:scenes.Slide2;
 var slide3:scenes.Slide3;
 var slide4:scenes.Slide4;
 var slide5:scenes.Slide5;
+var slide6:scenes.Slide6;
+var slide7:scenes.Slide7;
+var slide8:scenes.Slide8;
+var slide9:scenes.Slide9;
+
+
 
 
 
@@ -130,8 +136,40 @@ function changeScene(): void {
             slide5 = new scenes.Slide5();
             currentScene = slide5;
             console.log("Starting SLIDE5 Scene");
+            break;
+            
+        case config.Scene.SLIDE6:
+            // show the SLIDE6 scene
+            stage.removeAllChildren();
+            slide6 = new scenes.Slide6();
+            currentScene = slide6;
+            console.log("Starting SLIDE6 Scene");
             break; 
             
+        case config.Scene.SLIDE7:
+            // show the SLIDE7 scene
+            stage.removeAllChildren();
+            slide7 = new scenes.Slide7();
+            currentScene = slide7;
+            console.log("Starting SLIDE7 Scene");
+            break; 
+       
+        case config.Scene.SLIDE8:
+            // show the SLIDE8 scene
+            stage.removeAllChildren();
+            slide8 = new scenes.Slide8();
+            currentScene = slide8;
+            console.log("Starting SLIDE8 Scene");
+            break; 
+            
+        case config.Scene.SLIDE9:
+            // show the SLIDE9 scene
+            stage.removeAllChildren();
+            slide9 = new scenes.Slide9();
+            currentScene = slide9;
+            console.log("Starting SLIDE9 Scene");
+            break; 
+                 
         case config.Scene.OVER:
             // show the game OVER scene
             stage.removeAllChildren();
