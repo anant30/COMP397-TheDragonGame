@@ -51,7 +51,7 @@ var scenes;
         // BACK Button click event handler
         Slide7.prototype._backButtonClick = function (event) {
             // Switch to the OVER Scene
-            scene = config.Scene.MENU;
+            scene = config.Scene.SLIDE8;
             changeScene();
         };
         return Slide7;

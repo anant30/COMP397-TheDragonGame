@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         Over.prototype.start = function () {
             // adding background
-            this._overImage = new createjs.Bitmap("../../Assets/images/Over.png");
+            this._overImage = new createjs.Bitmap("../../Assets/images/Over.gif");
             this.addChild(this._overImage);
             // add the PLAY label to the scene
             this._overLabel = new createjs.Text("You have been ate up live by GHOSTS", "30px Consolas", "#000000");
@@ -40,7 +40,7 @@ var scenes;
         // BACK Button click event handler
         Over.prototype._backButtonClick = function (event) {
             // Switch to the OVER Scene
-            scene = config.Scene.SLIDE1;
+            scene = config.Scene.MENU;
             changeScene();
         };
         return Over;

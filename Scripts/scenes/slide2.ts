@@ -32,7 +32,7 @@ module scenes {
             this._playLabel1.regX = this._playLabel1.getMeasuredWidth() * 0.5;
             this._playLabel1.regY = this._playLabel1.getMeasuredHeight() * 0.5;
             this._playLabel1.x = config.Screen.CENTER_X;
-            this._playLabel1.y = config.Screen.CENTER_Y;
+            this._playLabel1.y = config.Screen.CENTER_Y+30;
             this.addChild(this._playLabel1);
 
             // add the NEXT button to the PLAY scene
@@ -71,14 +71,14 @@ module scenes {
         // NEXT Button click event handler
         private _nextButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.OVER;
+            scene = config.Scene.SLIDE3;
             changeScene();
         }
         
         // BACK Button click event handler
         private _backButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.MENU;
+            scene = config.Scene.OVER;
             changeScene();
         }
     }
