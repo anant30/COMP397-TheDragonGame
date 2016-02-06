@@ -26,12 +26,12 @@ var scenes;
             this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
             // add the NEXT button to the PLAY scene
-            this._nextButton = new objects.Button("YesButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 60);
+            this._nextButton = new objects.Button("YesButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 90);
             this.addChild(this._nextButton);
             // NEXT Button event listener
             this._nextButton.on("click", this._nextButtonClick, this);
             // add the BACK button to the PLAY scene
-            this._backButton = new objects.Button("NoButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 60);
+            this._backButton = new objects.Button("NoButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 90);
             this.addChild(this._backButton);
             // BACK Button event listener
             this._backButton.on("click", this._backButtonClick, this);

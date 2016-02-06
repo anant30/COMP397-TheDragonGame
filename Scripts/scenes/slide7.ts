@@ -31,7 +31,7 @@ module scenes {
             this._nextButton = new objects.Button(
                 "YesButton",
                 config.Screen.CENTER_X + 100,
-                config.Screen.CENTER_Y + 60);
+                config.Screen.CENTER_Y + 90);
             this.addChild(this._nextButton);
            
             // NEXT Button event listener
