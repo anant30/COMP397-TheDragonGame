@@ -39,7 +39,7 @@ module scenes {
             this._nextButton = new objects.Button(
                 "YesButton",
                 config.Screen.CENTER_X + 100,
-                config.Screen.CENTER_Y + 80);
+                config.Screen.CENTER_Y + 140);
             this.addChild(this._nextButton);
            
             // NEXT Button event listener
@@ -49,7 +49,7 @@ module scenes {
             this._backButton = new objects.Button(
                 "NoButton",
                 config.Screen.CENTER_X - 100,
-                config.Screen.CENTER_Y + 80);
+                config.Screen.CENTER_Y + 140);
             this.addChild(this._backButton);
            
             // BACK Button event listener
