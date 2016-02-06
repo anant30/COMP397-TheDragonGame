@@ -24,7 +24,7 @@ module scenes {
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             this._playLabel.x = config.Screen.CENTER_X;
-            this._playLabel.y = config.Screen.CENTER_Y;
+            this._playLabel.y = config.Screen.CENTER_Y+60;
             this.addChild(this._playLabel);
 
             // add the NEXT button to the PLAY scene

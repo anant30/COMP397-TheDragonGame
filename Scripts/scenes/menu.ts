@@ -26,7 +26,7 @@ module scenes {
             this._gameLabel.regX = this._gameLabel.getMeasuredWidth() * 0.5;
             this._gameLabel.regY = this._gameLabel.getMeasuredHeight() * 0.5;
             this._gameLabel.x = config.Screen.CENTER_X;
-            this._gameLabel.y = config.Screen.CENTER_Y;
+            this._gameLabel.y = config.Screen.CENTER_Y+60;
             
             this.addChild(this._gameLabel);
             
@@ -34,7 +34,7 @@ module scenes {
             this._gameLabel1.regX = this._gameLabel1.getMeasuredWidth() * 0.5;
             this._gameLabel1.regY = this._gameLabel1.getMeasuredHeight() * 0.5;
             this._gameLabel1.x = config.Screen.CENTER_X;
-            this._gameLabel1.y = config.Screen.CENTER_Y+30;
+            this._gameLabel1.y = config.Screen.CENTER_Y+90;
             
             this.addChild(this._gameLabel1);
             
