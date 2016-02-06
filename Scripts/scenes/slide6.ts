@@ -20,7 +20,7 @@ module scenes {
             this._slide6Image = new createjs.Bitmap("../../Assets/images/House6.gif");
             this.addChild(this._slide6Image);  
             // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("Scooby is on Board.. Should he chase deamon to save shaggy??", "35px Consolas", "#000000");
+            this._playLabel = new createjs.Text("Scooby is on Board.. Should he chase deamon to save shaggy??", "35px Consolas", "#ffffff");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             this._playLabel.x = config.Screen.CENTER_X;

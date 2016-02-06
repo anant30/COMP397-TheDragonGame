@@ -19,7 +19,7 @@ var scenes;
             this._slide7Image = new createjs.Bitmap("../../Assets/images/House7.gif");
             this.addChild(this._slide7Image);
             // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("Looks like they Found their way out.. should they find their friends?", "60px Consolas", "#000000");
+            this._playLabel = new createjs.Text("Looks like they Found their way out.. should they find their friends?", "20px Consolas", "#ffffff");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             this._playLabel.x = config.Screen.CENTER_X;
@@ -45,13 +45,13 @@ var scenes;
         // NEXT Button click event handler
         Slide7.prototype._nextButtonClick = function (event) {
             // Switch to the OVER Scene
-            scene = config.Scene.OVER3;
+            scene = config.Scene.WIN;
             changeScene();
         };
         // BACK Button click event handler
         Slide7.prototype._backButtonClick = function (event) {
             // Switch to the OVER Scene
-            scene = config.Scene.WIN;
+            scene = config.Scene.OVER;
             changeScene();
         };
         return Slide7;

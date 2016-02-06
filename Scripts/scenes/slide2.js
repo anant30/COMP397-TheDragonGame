@@ -19,13 +19,13 @@ var scenes;
             this._slide2Image = new createjs.Bitmap("../../Assets/images/House2.gif");
             this.addChild(this._slide2Image);
             // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("Woah!! this house is Haunted.. we need to get outta here..", "20px Consolas", "#000000");
+            this._playLabel = new createjs.Text("Woah!! this house is Haunted.. we need to get outta here..", "20px Consolas", "#ffffff");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             this._playLabel.x = config.Screen.CENTER_X;
             this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
-            this._playLabel1 = new createjs.Text("But seems like we lost the key of our car.. wanna go back inside?", "20px Consolas", "#000000");
+            this._playLabel1 = new createjs.Text("But seems like we lost the key of our car.. wanna go back inside?", "20px Consolas", "#ffffff");
             this._playLabel1.regX = this._playLabel1.getMeasuredWidth() * 0.5;
             this._playLabel1.regY = this._playLabel1.getMeasuredHeight() * 0.5;
             this._playLabel1.x = config.Screen.CENTER_X;

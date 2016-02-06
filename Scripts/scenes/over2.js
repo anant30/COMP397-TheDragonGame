@@ -19,7 +19,7 @@ var scenes;
             this._overImage = new createjs.Bitmap("../../Assets/images/Over2.gif");
             this.addChild(this._overImage);
             // add the PLAY label to the scene
-            this._overLabel = new createjs.Text("You have been Lockedup inside the Haunted House", "30px Consolas", "#000000");
+            this._overLabel = new createjs.Text("You have been Lockedup inside the Haunted House", "30px Consolas", "#ffffff");
             this._overLabel.regX = this._overLabel.getMeasuredWidth() * 0.5;
             this._overLabel.regY = this._overLabel.getMeasuredHeight() * 0.5;
             this._overLabel.x = config.Screen.CENTER_X;
