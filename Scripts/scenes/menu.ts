@@ -4,6 +4,7 @@ module scenes {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _gameLabel:createjs.Text;
         private _startButton:objects.Button;
+        
         private _introImage: createjs.Bitmap;
         
         // CONSTRUCTOR ++++++++++++++++++++++
@@ -18,6 +19,7 @@ module scenes {
             
             this._introImage = new createjs.Bitmap("../../Assets/images/Intro.gif");
             this.addChild(this._introImage);
+            
             // add the MENU label to the scene
             this._gameLabel = new createjs.Text("Scooby Dooby Do.. where are you", "30px Consolas", "#ffffff");                  
             this._gameLabel.regX = this._gameLabel.getMeasuredWidth() * 0.5;
