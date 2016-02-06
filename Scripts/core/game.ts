@@ -13,6 +13,8 @@ var menu:scenes.Menu;
 var play:scenes.Play;
 var win:scenes.Win;
 var over:scenes.Over;
+var over2:scenes.Over2;
+var over3:scenes.Over3;
 
 var slide1:scenes.Slide1;
 var slide2:scenes.Slide2;
@@ -177,6 +179,22 @@ function changeScene(): void {
             currentScene = over;
             console.log("Starting OVER Scene");
             break;
+            
+        case config.Scene.OVER2:
+            // show the game OVER scene
+            stage.removeAllChildren();
+            over2 = new scenes.Over2();
+            currentScene = over2;
+            console.log("Starting OVER2 Scene");
+            break;  
+            
+        case config.Scene.OVER3:
+            // show the game OVER scene
+            stage.removeAllChildren();
+            over3 = new scenes.Over3();
+            currentScene = over3;
+            console.log("Starting OVER3 Scene");
+            break;      
             
         case config.Scene.WIN:
             // show the game OVER scene

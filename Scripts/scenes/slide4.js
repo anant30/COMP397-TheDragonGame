@@ -45,7 +45,7 @@ var scenes;
         // NEXT Button click event handler
         Slide4.prototype._nextButtonClick = function (event) {
             // Switch to the OVER Scene
-            scene = config.Scene.OVER;
+            scene = config.Scene.OVER3;
             changeScene();
         };
         // BACK Button click event handler

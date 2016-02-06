@@ -20,7 +20,7 @@ module scenes {
             this._slide1Image = new createjs.Bitmap("../../Assets/images/House1.gif");
             this.addChild(this._slide1Image);  
             // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("Do you wanna MESS UP with that DeMoN?", "60px Consolas", "#000000");
+            this._playLabel = new createjs.Text("Do you wanna MESS UP with that DeMoN?", "30px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             this._playLabel.x = config.Screen.CENTER_X;
@@ -70,7 +70,7 @@ module scenes {
         // BACK Button click event handler
         private _backButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.OVER;
+            scene = config.Scene.OVER2;
             changeScene();
         }
     }

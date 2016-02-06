@@ -45,13 +45,13 @@ var scenes;
         // NEXT Button click event handler
         Slide7.prototype._nextButtonClick = function (event) {
             // Switch to the OVER Scene
-            scene = config.Scene.OVER;
+            scene = config.Scene.OVER3;
             changeScene();
         };
         // BACK Button click event handler
         Slide7.prototype._backButtonClick = function (event) {
             // Switch to the OVER Scene
-            scene = config.Scene.SLIDE8;
+            scene = config.Scene.WIN;
             changeScene();
         };
         return Slide7;
