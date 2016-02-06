@@ -26,7 +26,7 @@ var scenes;
             this._playLabel.y = config.Screen.CENTER_Y + 60;
             this.addChild(this._playLabel);
             // add the NEXT button to the PLAY scene
-            this._nextButton = new objects.Button("YesButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 90);
+            this._nextButton = new objects.Button("YesButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 140);
             this.addChild(this._nextButton);
             // NEXT Button event listener
             this._nextButton.on("click", this._nextButtonClick, this);
