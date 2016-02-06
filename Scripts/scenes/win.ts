@@ -50,7 +50,7 @@ module scenes {
         // BACK Button click event handler
         private _backButtonClick(event: createjs.MouseEvent) {
             // Switch to the WIN Scene
-            scene = config.Scene.SLIDE1;
+            scene = config.Scene.MENU;
             changeScene();
         }
     }

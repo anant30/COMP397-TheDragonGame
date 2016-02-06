@@ -39,7 +39,7 @@ var scenes;
         // BACK Button click event handler
         Win.prototype._backButtonClick = function (event) {
             // Switch to the WIN Scene
-            scene = config.Scene.SLIDE1;
+            scene = config.Scene.MENU;
             changeScene();
         };
         return Win;
